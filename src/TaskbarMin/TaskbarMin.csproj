@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>TaskbarMin</AssemblyName>
+    <RootNamespace>TaskbarMin</RootNamespace>
+
+    <!-- Metadatos (la versión real la inyecta la CI con -p:Version=...) -->
+    <Version>1.0.0</Version>
+    <Product>TaskbarMin</Product>
+    <Description>Barra de tareas transparente o con desenfoque para Windows 11, en segundo plano.</Description>
+
+    <!-- Un único .exe autocontenido: el usuario no necesita instalar .NET -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <DebugType>none</DebugType>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+</Project>
